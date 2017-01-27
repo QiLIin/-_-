@@ -1,17 +1,17 @@
 ﻿<picture young1>
-/items=("y10.jpg","y11.jpg","y12.jpg","y13.jpg","y14.jpg","y15.jpg,y16.jpg","y17.jpg","y18.jpg","y19.jpg")
+/items=("y10.BMP","y11.BMP","y12.BMP","y13.BMP","y14.BMP","y15.BMP","y16.BMP","y17.BMP","y18.BMP","y19.BMP")
 </picture>
 
 <picture old1>
-/items=("o10.jpg","o11.jpg","o12.jpg","o13.jpg","o14.jpg","o15.jpg","o16.jpg","o17.jpg","o18.jpg","o19.jpg")
+/items=("o10.BMP","o11.BMP","o12.BMP","o13.BMP","o14.BMP","o15.BMP","o16.BMP","o17.BMP","o18.BMP","o19.BMP")
 </picture>
 
 <picture young2>
-/items=("y0.jpg","y21.jpg","y22.jpg","y23.jpg","y24.jpg","y25.jpg","y26.jpg","y27.jpg","y28.jpg","y29.jpg")
+/items=("y20.BMP","y21.BMP","y22.BMP","y23.BMP","y24.BMP","y25.BMP","y26.BMP","y27.BMP","y28.BMP","y29.BMP")
 </picture>
 
 <picture old2>
-/items=("ol20.jpg","o21.jpg","o22.jpg","o23.jpg","o24.jpg","o25.jpg","o26.jpg","o27.jpg","o28.jpg","o29.jpg")
+/items=("o20.BMP","o21.BMP","o22.BMP","o23.BMP","o24.BMP","o25.BMP","o26.BMP","o27.BMP","o28.BMP","o29.BMP")
 </picture>
 
 <text fixation>
@@ -46,7 +46,7 @@
 	/txcolor = (255,255,255)
 </text>
 
-<text endtxt2>
+<text endtxt>
 	/hjustify = center
 	/items = (/1 = "感谢您参与我们的实验，请按任意键退出")
 	/size=(1000,300)
@@ -82,45 +82,39 @@
 </trial>
 
 <trial studyyoung>
-    /pretrialpause = 5000
 	/validresponse = ("F","J")
 	/correctresponse = ("F")
-	/stimulusframes = [1 = fixation; 5000 = young1; 500 = blank]
+	/stimulustimes = [1 = fixation; 2000 = young1; 500 = blank]
 </trial>
 
 <trial studyold>
-    /pretrialpause = 5000
 	/validresponse = ("F","J")
 	/correctresponse = ("J")
-	/stimulusframes = [1 = fixation; 5000 = old1; 500 = blank]
+	/stimulustimes = [1 = fixation; 2000 = old1; 500 = blank]
 </trial>
 
 <trial testyoung1>
-    /pretrialpause = 5000
 	/validresponse = ("D","K")
 	/correctresponse = ("D")
-	/stimulusframes = [1 = fixation; 2000 = young1; 500 = blank]
+	/stimulustimes = [1 = fixation; 2000 = young1; 500 = blank]
 </trial>
 
 <trial testyoung2>
-    /pretrialpause = 5000
 	/validresponse = ("D","K")
 	/correctresponse = ("D")
-	/stimulusframes = [1 = fixation; 2000 = young2; 500 = blank]
+	/stimulustimes = [1 = fixation; 2000 = young2; 500 = blank]
 </trial>
 
 <trial testold1>
-    /pretrialpause = 5000
 	/validresponse = ("D","K")
 	/correctresponse = ("K")
-	/stimulusframes = [1 = fixation; 2000 = old1; 500 = blank]
+	/stimulustimes = [1 = fixation; 2000 = old1; 500 = blank]
 </trial>
 
 <trial testold2>
-    /pretrialpause = 5000
 	/validresponse = ("D","K")
 	/correctresponse = ("K")
-	/stimulusframes = [1 = fixation; 2000 = old2; 500 = blank]
+	/stimulustimes = [1 = fixation; 2000 = old2; 500 = blank]
 </trial>
 
 <block instruction1blk>
@@ -141,13 +135,13 @@
 <block study>
 /screencolor = (0,0,0)
 /blockfeedback = (meanlatency,correct)
-/trail = [1-20=noreplace(studyyoung,studyold)]
+/trials = [1-20=noreplace(studyyoung,studyold)]
 </block>
 
 <block test>
 /screencolor = (0,0,0)
 /blockfeedback = (meanlatency,correct)
-/trail = [1-40=noreplace(testyoung1,testold1,testyoung2,testold2)]
+/trials = [1-40=noreplace(testyoung1,testold1,testyoung2,testold2)]
 </block>
 
 <expt>
