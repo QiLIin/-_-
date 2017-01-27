@@ -1,0 +1,5 @@
+date	time	group	subject	build	blocknum	trialnum	blockcode	trialcode	pretrialpause	posttrialpause	windowcenter	trialduration	trialtimeout	blocktimeout	response	correct	latency	inwindow	stimulusnumber1	stimulusitem1	stimulusvpos1	stimulushpos1	stimulusonset1	stimulusnumber2	stimulusitem2	stimulusvpos2	stimulushpos2	stimulusonset2	stimulusnumber3	stimulusitem3	stimulusvpos3	stimulushpos3	stimulusonset3
+012717	21:55:20	1	1	4.0.9.0	2	1	study	studyold	0	0	0	0	0	0	Ctrl+'Q'	1	4716	0	1	+	50pct	50pct	0	1		50pct	50pct	499	9	o18.BMP	50pct	50pct	1999
+012717	22:46:16	1	1	4.0.9.0	2	1	study	studyold	0	0	0	0	0	0	33	0	1458	0	1	+	50pct	50pct	0	1		50pct	50pct	500	2	o11.BMP	50pct	50pct	1999
+012717	22:46:16	1	1	4.0.9.0	2	2	study	studyyoung	0	0	0	0	0	0	36	0	331	0	1	+	50pct	50pct	53	1		50pct	50pct	499	6	y15.BMP	50pct	50pct	1999
+012717	22:46:16	1	1	4.0.9.0	2	3	study	studyyoung	0	0	0	0	0	0	Ctrl+'Q'	1	1949	0	1	+	50pct	50pct	0	1		50pct	50pct	501	3	y12.BMP	50pct	50pct	1999
